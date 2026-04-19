@@ -5,20 +5,20 @@
 class Gtf < Formula
   desc "A terminal UI for managing git worktrees"
   homepage "https://github.com/cKreymborg/git-treeflow"
-  version "0.3.0"
+  version "0.4.0"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/cKreymborg/git-treeflow/releases/download/v0.3.0/gtf_darwin_amd64.tar.gz"
-      sha256 "e9635a6d6cc4cb0728bedd31ff18285c8b0584320739bc2a489f6d988fd2bee3"
+      url "https://github.com/cKreymborg/git-treeflow/releases/download/v0.4.0/gtf_darwin_amd64.tar.gz"
+      sha256 "e4c20c5a49d757411935fad94a96f20b28144e65cd7255f5c9a98e7fa4679736"
 
       define_method(:install) do
         bin.install "gtf"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/cKreymborg/git-treeflow/releases/download/v0.3.0/gtf_darwin_arm64.tar.gz"
-      sha256 "42cbfe272c1612ad9da42d74cc9530dd2267f7c78df6274085352c3538273f50"
+      url "https://github.com/cKreymborg/git-treeflow/releases/download/v0.4.0/gtf_darwin_arm64.tar.gz"
+      sha256 "ecf97d3e5ad1c16a1c225f979fe84c85b2750b9e76d6d9fe679b43618f893881"
 
       define_method(:install) do
         bin.install "gtf"
@@ -28,15 +28,15 @@ class Gtf < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/cKreymborg/git-treeflow/releases/download/v0.3.0/gtf_linux_amd64.tar.gz"
-      sha256 "37188b295abfa1b7312f9923396c602953e67ea48cff94017361b75261561e0c"
+      url "https://github.com/cKreymborg/git-treeflow/releases/download/v0.4.0/gtf_linux_amd64.tar.gz"
+      sha256 "832bd20aa9bbb5ffac7d5a5a3935a034c303a5325829a46957e501370f3ae15c"
       define_method(:install) do
         bin.install "gtf"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/cKreymborg/git-treeflow/releases/download/v0.3.0/gtf_linux_arm64.tar.gz"
-      sha256 "2bf9a3d36297b74374bd2c7dfd8ffb13c12d390633c75f49c4228dadf4e7182d"
+      url "https://github.com/cKreymborg/git-treeflow/releases/download/v0.4.0/gtf_linux_arm64.tar.gz"
+      sha256 "973a0e949ffd7f20a6e7b7a3c5dba56ecc94dc4877e12b253b18fc5185ef6a1d"
       define_method(:install) do
         bin.install "gtf"
       end
